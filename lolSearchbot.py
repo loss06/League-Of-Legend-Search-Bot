@@ -91,7 +91,7 @@ async def on_message(message): # on_message() event : when the bot has recieved 
         return
 
     if message.content.startswith("!help") or message.content.startswith("!도움말"):
-        embed = discord.Embed(title="명령어 사용방법!", description="!전적 (소환사 이름 - 띄어쓰기 붙여쓰기 상관없습니다)", color=0x5CD1E5)
+        embed = discord.Embed(title="명령어 사용방법!", description="!롤전적 (소환사 이름 - 띄어쓰기 붙여쓰기 상관없습니다)", color=0x5CD1E5)
         embed.set_footer(text='Service provided by Hoplin.',
                          icon_url='https://avatars2.githubusercontent.com/u/45956041?s=460&u=1caf3b112111cbd9849a2b95a88c3a8f3a15ecfa&v=4')
         await message.channel.send("도움말!", embed=embed)
